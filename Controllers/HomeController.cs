@@ -7,13 +7,13 @@ namespace SportsStore.Controllers
     public class HomeController : Controller
     {
 
-        private IStoreRepository repository;
+        public IStoreRepository repository;
 
         public HomeController(IStoreRepository repo)
         {
             repository = repo;
         }
-        public IActionResult Index() => View(repository.Products);
+        private IActionResult Index() => View(repository.Products);
 
         //modified by owner
 
