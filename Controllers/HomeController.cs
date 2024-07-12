@@ -14,6 +14,7 @@ namespace SportsStore.Controllers
             repository = repo;
         }
         public IActionResult Index() => View(repository.Products);
+        // second test
 
         //modified by owner
 
